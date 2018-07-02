@@ -9,6 +9,17 @@
             <h3 class="text-danger">{{post.data.ups}} ⬆️</h3>
             <p>created {{formatDate(post.data.created_utc)}} ago by {{post.data.author}}</p>
             <span class="badge badge-pill badge-secondary">{{post.data.num_comments}} comments</span>
+            
+            <form action="/action_page.php" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+<br>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+
+
+            
             <button
               v-if="isImage(post)"
               @click="post.showImage = !post.showImage"
