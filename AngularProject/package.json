@@ -1,0 +1,15 @@
+{
+  "name": "angularproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "vue": "^2.5.16"
+  }
+}
